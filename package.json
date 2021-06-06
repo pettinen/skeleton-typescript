@@ -1,0 +1,16 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build",
+  "author": "Jeremias Pettinen <hi@jeremi.as>",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src",
+    "start": "node build"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
