@@ -1,10 +1,27 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
-    "moduleResolution": "node",
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "baseUrl": ".",
+    "exactOptionalPropertyTypes": true,
+    "forceConsistentCasingInFileNames": true,
+    "importsNotUsedAsValues": "error",
+    "lib": ["ES2021"],
+    "module": "nodenext",
+    "newLine": "LF",
+    "noEmitOnError": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "outDir": "build",
+    "paths": {
+      "#src/*": ["src/*"]
+    },
+    "removeComments": true,
+    "sourceMap": true,
     "strict": true,
-    "target": "ES2020"
+    "target": "ES2021"
   },
   "include": ["src"]
 }
