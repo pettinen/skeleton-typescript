@@ -1,20 +1,28 @@
 {
   "name": "",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "author": "Jeremias Pettinen <hi@jeremi.as>",
   "license": "ISC",
+  "type": "module",
   "main": "build",
   "scripts": {
-    "build": "tsc",
+    "build": "rollup --config",
+    "dev": "rollup --config --watch & nodemon build",
     "lint": "eslint src",
-    "start": "node ."
+    "start": "node build"
   },
+  "dependencies": {},
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^10.0.1",
     "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
     "eslint": "^8.31.0",
+    "nodemon": "^2.0.20",
+    "rollup": "^3.9.1",
+    "tslib": "^2.4.1",
     "typescript": "^4.9.4"
   }
 }

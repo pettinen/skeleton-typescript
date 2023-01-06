@@ -1,3 +1,3 @@
-import { hello } from "./strings";
+import { hello } from "@/strings";
 
-console.log(hello);
+console.log(`${hello} world!`);

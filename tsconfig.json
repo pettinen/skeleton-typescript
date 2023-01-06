@@ -6,13 +6,16 @@
     "forceConsistentCasingInFileNames": true,
     "importsNotUsedAsValues": "error",
     "lib": ["es2022"],
-    "module": "commonjs",
+    "module": "es2022",
     "newLine": "LF",
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "build",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "removeComments": true,
     "sourceMap": true,
     "strict": true,
