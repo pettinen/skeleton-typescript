@@ -2,7 +2,6 @@
   "compilerOptions": {
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-    "baseUrl": ".",
     "exactOptionalPropertyTypes": true,
     "forceConsistentCasingInFileNames": true,
     "importsNotUsedAsValues": "error",
@@ -14,9 +13,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "build",
-    "paths": {
-      "#src/*": ["src/*"]
-    },
     "removeComments": true,
     "sourceMap": true,
     "strict": true,
