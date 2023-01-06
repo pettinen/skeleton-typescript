@@ -6,10 +6,9 @@
     "exactOptionalPropertyTypes": true,
     "forceConsistentCasingInFileNames": true,
     "importsNotUsedAsValues": "error",
-    "lib": ["ES2021"],
-    "module": "nodenext",
+    "lib": ["es2022"],
+    "module": "commonjs",
     "newLine": "LF",
-    "noEmitOnError": true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
@@ -21,7 +20,7 @@
     "removeComments": true,
     "sourceMap": true,
     "strict": true,
-    "target": "ES2021"
+    "target": "es2022"
   },
   "include": ["src"]
 }
