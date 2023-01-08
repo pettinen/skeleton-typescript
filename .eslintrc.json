@@ -501,7 +501,32 @@
         ],
         "@typescript-eslint/member-ordering": "warn",
         "@typescript-eslint/method-signature-style": "warn",
-        "@typescript-eslint/naming-convention": "warn",
+        "@typescript-eslint/naming-convention": [
+            "warn",
+            {
+                "selector": "default",
+                "format": [
+                    "snake_case"
+                ],
+                "leadingUnderscore": "forbid",
+                "trailingUnderscore": "allow"
+            },
+            {
+                "selector": "variable",
+                "format": [
+                    "snake_case",
+                    "UPPER_CASE"
+                ],
+                "leadingUnderscore": "forbid",
+                "trailingUnderscore": "allow"
+            },
+            {
+                "selector": "typeLike",
+                "format": [
+                    "StrictPascalCase"
+                ]
+            }
+        ],
         "@typescript-eslint/no-array-constructor": "error",
         "@typescript-eslint/no-base-to-string": "error",
         "@typescript-eslint/no-confusing-non-null-assertion": "off",
